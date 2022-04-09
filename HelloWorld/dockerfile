@@ -1,0 +1,5 @@
+FROM openjdk:17
+COPY . /usr/helloWorld
+WORKDIR /usr/helloWorld
+RUN javac src/main/java/HelloWorldApp.java
+CMD ["java", "HelloWorldApp"]
